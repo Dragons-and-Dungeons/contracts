@@ -10,5 +10,4 @@ contract CharacterTest is DSTest {
     function setUp() public {
         character = new Character();
     }
-
 }
