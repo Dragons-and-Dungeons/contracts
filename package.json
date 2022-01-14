@@ -1,0 +1,14 @@
+{
+  "name": "DnD",
+  "version": "1.0.0",
+  "main": " ",
+  "repository": "git@github.com:Dragons-and-Dungeons/contracts",
+  "author": "@Crisgarner <yarn>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "prettier": "^2.5.1",
+    "prettier-config-solidity": "^1.6.2",
+    "prettier-plugin-solidity": "^1.0.0-beta.19"
+  }
+}
