@@ -2,7 +2,7 @@
 pragma solidity 0.8.10;
 
 import "./interfaces/IRace.sol";
-import "openzeppelin-contracts/access/Ownable.sol";
+import "openzeppelin-contracts/contracts/access/Ownable.sol";
 
 contract Human is IRace, Ownable {
     int8 public str = 1;

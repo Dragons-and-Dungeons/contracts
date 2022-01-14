@@ -6,6 +6,9 @@
   "author": "@Crisgarner <yarn>",
   "license": "MIT",
   "private": false,
+  "scripts": {
+    "test": "./test.sh"
+  },
   "dependencies": {
     "prettier": "^2.5.1",
     "prettier-config-solidity": "^1.6.2",
