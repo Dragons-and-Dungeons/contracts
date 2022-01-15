@@ -30,6 +30,35 @@ contract BarbarianTest is DSTest {
         assertEq(hitDie, barbarian.hitDie());
     }
 
+    function testNerfSavingThrows(bytes32 saving) public {
+        bytes32[] memory newSaving = new bytes32[](1);
+        newSaving[0] = saving;
+        barbarian.nerfSavingThrows(newSaving);
+        assertEq(newSaving[0], barbarian.savingThrows()[0]);
+    }
+
+
+    function testNerfPrimaryAbilities(bytes32 primary) public {
+        bytes32[] memory newPrimary = new bytes32[](1);
+        newPrimary[0] = primary;
+        barbarian.nerfPrimaryAbilities(newPrimary);
+        assertEq(newPrimary[0], barbarian.primaryAbilities()[0]);
+    }
+
+    function testNerfProficiencies(bytes32 proficience) public {
+        bytes32[] memory newProficiencies = new bytes32[](1);
+        newProficiencies[0] = proficience;
+        barbarian.nerfProficiencies(newProficiencies);
+        assertEq(newProficiencies[0], barbarian.proficiencies()[0]);
+    }
+
+    function testNerfSkills(bytes32 skill) public {
+        bytes32[] memory newSkills = new bytes32[](1);
+        newSkills[0] = skill;
+        barbarian.nerfSkills(newSkills);
+        assertEq(newSkills[0], barbarian.skills()[0]);
+    }
+
     function testNerfSpells(bytes32 spell) public {
         bytes32[] memory newSpells = new bytes32[](1);
         newSpells[0] = spell;

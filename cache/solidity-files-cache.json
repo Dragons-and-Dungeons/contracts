@@ -316,8 +316,8 @@
       ]
     },
     "/home/crisgarner/Projects/hackathons/DnD/src/test/Barbarian.t.sol": {
-      "lastModificationDate": 1642217315113,
-      "contentHash": "267d02653a8224f4768b3633c56f511b",
+      "lastModificationDate": 1642219497291,
+      "contentHash": "ac1df14467cec350e74e30d8cdb6eb10",
       "sourceName": "src/test/Barbarian.t.sol",
       "solcConfig": {
         "settings": {
