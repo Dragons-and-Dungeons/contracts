@@ -36,7 +36,5 @@ interface IRace {
 
     function nerfSize(bytes32) external;
 
-    function nerfLanguages() external;
-
-    function addLanguage(bytes32) external;
+    function nerfLanguages(bytes32[] memory) external;
 }

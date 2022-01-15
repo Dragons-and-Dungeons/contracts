@@ -56,11 +56,7 @@ contract Human is IRace, Ownable {
         size = _size;
     }
 
-    function nerfLanguages() external onlyOwner {
-        delete (_languages);
-    }
-
-    function addLanguage(bytes32 language) external onlyOwner {
-        _languages.push(language);
+    function nerfLanguages(bytes32[] memory newLanguages) external onlyOwner {
+       _languages =newLanguages;
     }
 }

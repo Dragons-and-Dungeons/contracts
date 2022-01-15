@@ -64,17 +64,13 @@ contract HumanTest is DSTest {
         assertEq(size, human.size());
     }
 
-    function testNerfLanguages() public {
-        assertEq(human.languages().length, 1);
-        human.nerfLanguages();
-        assertEq(human.languages().length, 0);
+    function testNerfLanguages(bytes32 language) public {
+        bytes32[] memory languages = new bytes32[](1);
+        languages[0] = language;
+        human.nerfLanguages(languages);
+        assertEq(human.languages()[0], languages[0]);
     }
 
-    function testAddLanguage(bytes32 language) public {
-        human.addLanguage(language);
-        assertEq(human.languages()[1], language);
-        assertEq(human.languages().length, 2);
-    }
 
     // TODO: test calls by not owners
 }

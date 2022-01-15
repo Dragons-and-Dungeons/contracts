@@ -7,13 +7,24 @@ import "openzeppelin-contracts/contracts/access/Ownable.sol";
 contract Barbarian is IClass, Ownable {
 
     int8 public hitDie = 12;
-    bytes32[] private _savingThrows;
     bytes32[] private _primaryAbilities;
+    bytes32[] private _savingThrows;
     bytes32[] private _proficiencies;
     bytes32[] private _skills;
     bytes32[] private _spells;
 
     constructor(address dm) {
+        _primaryAbilities.push("str");
+        _savingThrows.push("str");
+        _savingThrows.push("con");
+        _skills.push("rage");
+        _skills.push("unarmored defense");
+        _proficiencies.push("light armor");
+        _proficiencies.push("medium armor");
+        _proficiencies.push("shields");
+        _proficiencies.push("simple weapons");
+        _proficiencies.push("martial weapons");
+
         transferOwnership(dm);
     }
 
