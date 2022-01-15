@@ -12,24 +12,30 @@ contract CharacterTest is DSTest {
     Barbarian barbarian = new Barbarian(address(this));
 
     function setUp() public {
-        character = new Character();
+        character = new Character("Character", "D&D");
     }
 
-        function testCreateCharacter() public {
-//            character.create(
-//                "Bigby",
-//                "male",
-//                "eip155:100/erc721:0xCF964c89f509a8c0Ac36391c5460dF94B91daba5/36758",
-//                address(human),
-//                address(barbarian),
-//                "IPFS/HASH"
-//            );
-            // Bonds, Personality Traits, Ideals, Flaws, Alignment, Background; should be saved on ipfs
+    function testParams() public {
+        assertEq(character.name(), "Character");
+        assertEq(character.symbol(),"D&D");
+    }
 
-            // Checks values
-            // Race should be it's own contract and add bonuses,
-            // Class should be a contract
-        }
+    function testCreate() public {
+        assertEq(character.lastId(), 0);
+        character.create(
+            "QmcoHdzc6E8aYCUM8Q3KEvHycgEHqEzpwJyXwnHU9ShzFv",
+            address(human),
+            address(barbarian)
+        );
+
+        assertEq(character.balanceOf(address(this)),1);
+        assertEq(character.ownerOf(0),address(this));
+        assertEq(character.lastId(), 1);
+
+        // Checks values
+        // Race should be it's own contract and add bonuses,
+        // Class should be a contract
+    }
     //
     //    function testSetAbilities() public {
     //        character.setAbilities(1, 15, 14, 13, 12, 10, 8);

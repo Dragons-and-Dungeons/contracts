@@ -105,6 +105,41 @@
         "Context"
       ]
     },
+    "/home/crisgarner/Projects/hackathons/DnD/lib/solmate/src/tokens/ERC721.sol": {
+      "lastModificationDate": 1642199159134,
+      "contentHash": "570fd56c160b36eedded340d7f877495",
+      "sourceName": "lib/solmate/src/tokens/ERC721.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.8.0"
+      ],
+      "artifacts": [
+        "ERC721",
+        "ERC721TokenReceiver"
+      ]
+    },
     "/home/crisgarner/Projects/hackathons/DnD/src/Barbarian.sol": {
       "lastModificationDate": 1642206173132,
       "contentHash": "2a27b467745153e620acd4e49a6a6172",
@@ -143,8 +178,8 @@
       ]
     },
     "/home/crisgarner/Projects/hackathons/DnD/src/Character.sol": {
-      "lastModificationDate": 1642199191446,
-      "contentHash": "78518f2aba6d5839eaa45dc91fba9dd1",
+      "lastModificationDate": 1642271551309,
+      "contentHash": "dcc20e7ceb0c05d967c69372812fcf5e",
       "sourceName": "src/Character.sol",
       "solcConfig": {
         "settings": {
@@ -168,7 +203,9 @@
           "evmVersion": "london"
         }
       },
-      "imports": [],
+      "imports": [
+        "solmate/tokens/ERC721.sol"
+      ],
       "versionPragmas": [
         "0.8.10"
       ],
@@ -353,8 +390,8 @@
       ]
     },
     "/home/crisgarner/Projects/hackathons/DnD/src/test/Character.t.sol": {
-      "lastModificationDate": 1642205199287,
-      "contentHash": "a208d037f6fa1af6c481b3964155a3f1",
+      "lastModificationDate": 1642271567013,
+      "contentHash": "7343b7662dee06d124b8a4716efbe1e4",
       "sourceName": "src/test/Character.t.sol",
       "solcConfig": {
         "settings": {

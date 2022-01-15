@@ -14,4 +14,5 @@ else
   export PROPTEST_CASES=100 # Only fuzz briefly if DEEP_FUZZ is not set to true.
 fi
 
-forge test -v
+## --match-contract ContractName
+forge test -vv --match-contract Character

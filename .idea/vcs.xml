@@ -3,5 +3,10 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/lib/ds-test" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/lib/openzeppelin-contracts" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/lib/solmate" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/lib/solmate/lib/ds-test" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/lib/solmate/lib/weird-erc20" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/lib/solmate/lib/weird-erc20/lib/ds-test" vcs="Git" />
   </component>
 </project>
