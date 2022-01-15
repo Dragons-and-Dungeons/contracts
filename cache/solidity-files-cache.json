@@ -105,6 +105,43 @@
         "Context"
       ]
     },
+    "/home/crisgarner/Projects/hackathons/DnD/src/Barbarian.sol": {
+      "lastModificationDate": 1642204289853,
+      "contentHash": "19d5e306f85ee763326f70b62c66a6cc",
+      "sourceName": "src/Barbarian.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "./interfaces/IClass.sol",
+        "openzeppelin-contracts/contracts/access/Ownable.sol"
+      ],
+      "versionPragmas": [
+        "0.8.10"
+      ],
+      "artifacts": [
+        "Barbarian"
+      ]
+    },
     "/home/crisgarner/Projects/hackathons/DnD/src/Character.sol": {
       "lastModificationDate": 1642199191446,
       "contentHash": "78518f2aba6d5839eaa45dc91fba9dd1",
@@ -210,6 +247,40 @@
         "Human"
       ]
     },
+    "/home/crisgarner/Projects/hackathons/DnD/src/interfaces/IClass.sol": {
+      "lastModificationDate": 1642202918191,
+      "contentHash": "5be4d3b3d35249758f97a9baf72241b7",
+      "sourceName": "src/interfaces/IClass.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.10"
+      ],
+      "artifacts": [
+        "IClass"
+      ]
+    },
     "/home/crisgarner/Projects/hackathons/DnD/src/interfaces/IRace.sol": {
       "lastModificationDate": 1642176382340,
       "contentHash": "872f9627a9143f188150d698a1921c99",
@@ -245,8 +316,8 @@
       ]
     },
     "/home/crisgarner/Projects/hackathons/DnD/src/test/Character.t.sol": {
-      "lastModificationDate": 1642176382352,
-      "contentHash": "a70045b423e8b27b44c52618ed8aa724",
+      "lastModificationDate": 1642205199287,
+      "contentHash": "a208d037f6fa1af6c481b3964155a3f1",
       "sourceName": "src/test/Character.t.sol",
       "solcConfig": {
         "settings": {
@@ -272,7 +343,9 @@
       },
       "imports": [
         "ds-test/test.sol",
-        "../Character.sol"
+        "../Character.sol",
+        "../Human.sol",
+        "../Barbarian.sol"
       ],
       "versionPragmas": [
         "0.8.10"
@@ -282,7 +355,7 @@
       ]
     },
     "/home/crisgarner/Projects/hackathons/DnD/src/test/Human.t.sol": {
-      "lastModificationDate": 1642176382348,
+      "lastModificationDate": 1642201167553,
       "contentHash": "75a713f65eba7a785cc1da02741b6cb4",
       "sourceName": "src/test/Human.t.sol",
       "solcConfig": {
