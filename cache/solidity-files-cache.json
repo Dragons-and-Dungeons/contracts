@@ -178,8 +178,8 @@
       ]
     },
     "/home/crisgarner/Projects/hackathons/DnD/src/Character.sol": {
-      "lastModificationDate": 1642271551309,
-      "contentHash": "dcc20e7ceb0c05d967c69372812fcf5e",
+      "lastModificationDate": 1642285928325,
+      "contentHash": "5d8b212b86cf7b5ca3b96cde1bcf747c",
       "sourceName": "src/Character.sol",
       "solcConfig": {
         "settings": {
@@ -284,6 +284,80 @@
         "Human"
       ]
     },
+    "/home/crisgarner/Projects/hackathons/DnD/src/Monster.sol": {
+      "lastModificationDate": 1642290695499,
+      "contentHash": "5b07b4c1895ad395016dfbf22bf7d559",
+      "sourceName": "src/Monster.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "solmate/tokens/ERC721.sol",
+        "openzeppelin-contracts/contracts/access/Ownable.sol"
+      ],
+      "versionPragmas": [
+        "0.8.10"
+      ],
+      "artifacts": [
+        "Monster"
+      ]
+    },
+    "/home/crisgarner/Projects/hackathons/DnD/src/classes/Barbarian.sol": {
+      "lastModificationDate": 1642289632993,
+      "contentHash": "a4e89eacc9e4ec421a979b005cbe245a",
+      "sourceName": "src/classes/Barbarian.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "../interfaces/IClass.sol",
+        "openzeppelin-contracts/contracts/access/Ownable.sol"
+      ],
+      "versionPragmas": [
+        "0.8.10"
+      ],
+      "artifacts": [
+        "Barbarian"
+      ]
+    },
     "/home/crisgarner/Projects/hackathons/DnD/src/interfaces/IClass.sol": {
       "lastModificationDate": 1642202918191,
       "contentHash": "5be4d3b3d35249758f97a9baf72241b7",
@@ -316,6 +390,40 @@
       ],
       "artifacts": [
         "IClass"
+      ]
+    },
+    "/home/crisgarner/Projects/hackathons/DnD/src/interfaces/IMonster.sol": {
+      "lastModificationDate": 1642289883177,
+      "contentHash": "071d225250ac18811795ee4162f16353",
+      "sourceName": "src/interfaces/IMonster.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.10"
+      ],
+      "artifacts": [
+        "IMonster"
       ]
     },
     "/home/crisgarner/Projects/hackathons/DnD/src/interfaces/IRace.sol": {
@@ -352,9 +460,83 @@
         "IRace"
       ]
     },
+    "/home/crisgarner/Projects/hackathons/DnD/src/monsters/Troll.sol": {
+      "lastModificationDate": 1642289841605,
+      "contentHash": "a9da476cd76b738912f4976b14507640",
+      "sourceName": "src/monsters/Troll.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "openzeppelin-contracts/contracts/access/Ownable.sol",
+        "../interfaces/IMonster.sol"
+      ],
+      "versionPragmas": [
+        "0.8.10"
+      ],
+      "artifacts": [
+        "Troll"
+      ]
+    },
+    "/home/crisgarner/Projects/hackathons/DnD/src/races/Human.sol": {
+      "lastModificationDate": 1642289645561,
+      "contentHash": "1a3785724fe71492937a0603cb751c79",
+      "sourceName": "src/races/Human.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "../interfaces/IRace.sol",
+        "openzeppelin-contracts/contracts/access/Ownable.sol"
+      ],
+      "versionPragmas": [
+        "0.8.10"
+      ],
+      "artifacts": [
+        "Human"
+      ]
+    },
     "/home/crisgarner/Projects/hackathons/DnD/src/test/Barbarian.t.sol": {
-      "lastModificationDate": 1642219497291,
-      "contentHash": "ac1df14467cec350e74e30d8cdb6eb10",
+      "lastModificationDate": 1642286452642,
+      "contentHash": "78b24ea95ae43a15c43aa1ab8ad51615",
       "sourceName": "src/test/Barbarian.t.sol",
       "solcConfig": {
         "settings": {
@@ -380,7 +562,7 @@
       },
       "imports": [
         "ds-test/test.sol",
-        "../Barbarian.sol"
+        "../classes/Barbarian.sol"
       ],
       "versionPragmas": [
         "0.8.10"
@@ -390,8 +572,8 @@
       ]
     },
     "/home/crisgarner/Projects/hackathons/DnD/src/test/Character.t.sol": {
-      "lastModificationDate": 1642271567013,
-      "contentHash": "7343b7662dee06d124b8a4716efbe1e4",
+      "lastModificationDate": 1642273226115,
+      "contentHash": "c461e16cdf79d816351d3cd3f3de027b",
       "sourceName": "src/test/Character.t.sol",
       "solcConfig": {
         "settings": {
@@ -429,8 +611,8 @@
       ]
     },
     "/home/crisgarner/Projects/hackathons/DnD/src/test/Human.t.sol": {
-      "lastModificationDate": 1642217593382,
-      "contentHash": "7dad83e2b8dd142d8c6e8860aea0a805",
+      "lastModificationDate": 1642286465730,
+      "contentHash": "c1811a463841e4d1c4e63811c8220c81",
       "sourceName": "src/test/Human.t.sol",
       "solcConfig": {
         "settings": {
@@ -456,13 +638,88 @@
       },
       "imports": [
         "ds-test/test.sol",
-        "../Human.sol"
+        "../races/Human.sol"
       ],
       "versionPragmas": [
         "0.8.10"
       ],
       "artifacts": [
         "HumanTest"
+      ]
+    },
+    "/home/crisgarner/Projects/hackathons/DnD/src/test/Monster.t.sol": {
+      "lastModificationDate": 1642290753251,
+      "contentHash": "8c2e34d2459c13ba26d96452a5bea452",
+      "sourceName": "src/test/Monster.t.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "ds-test/test.sol",
+        "../Monster.sol",
+        "../monsters/Troll.sol"
+      ],
+      "versionPragmas": [
+        "0.8.10"
+      ],
+      "artifacts": [
+        "MonsterTest"
+      ]
+    },
+    "/home/crisgarner/Projects/hackathons/DnD/src/test/Troll.t.sol": {
+      "lastModificationDate": 1642289761073,
+      "contentHash": "db9a4971e79c56d53a2705e11967bd84",
+      "sourceName": "src/test/Troll.t.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "ds-test/test.sol",
+        "../monsters/Troll.sol"
+      ],
+      "versionPragmas": [
+        "0.8.10"
+      ],
+      "artifacts": [
+        "TrollTest"
       ]
     }
   }

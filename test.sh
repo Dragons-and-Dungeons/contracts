@@ -15,4 +15,4 @@ else
 fi
 
 ## --match-contract ContractName
-forge test -vv --match-contract Character
+forge test -vv --match-contract Monster

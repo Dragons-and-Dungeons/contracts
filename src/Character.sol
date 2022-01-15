@@ -18,5 +18,4 @@ contract Character is ERC721 {
         _mint(msg.sender, lastId);
         lastId++;
     }
-
 }

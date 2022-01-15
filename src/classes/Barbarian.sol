@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity 0.8.10;
 
-import "./interfaces/IClass.sol";
+import "../interfaces/IClass.sol";
 import "openzeppelin-contracts/contracts/access/Ownable.sol";
 
 contract Barbarian is IClass, Ownable {

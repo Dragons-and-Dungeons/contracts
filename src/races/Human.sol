@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity 0.8.10;
 
-import "./interfaces/IRace.sol";
+import "../interfaces/IRace.sol";
 import "openzeppelin-contracts/contracts/access/Ownable.sol";
 
 contract Human is IRace, Ownable {

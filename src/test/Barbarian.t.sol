@@ -2,7 +2,7 @@
 pragma solidity 0.8.10;
 
 import "ds-test/test.sol";
-import "../Barbarian.sol";
+import "../classes/Barbarian.sol";
 
 contract BarbarianTest is DSTest {
     Barbarian barbarian;

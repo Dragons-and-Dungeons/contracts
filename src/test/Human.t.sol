@@ -2,7 +2,7 @@
 pragma solidity 0.8.10;
 
 import "ds-test/test.sol";
-import "../Human.sol";
+import "../races/Human.sol";
 
 contract HumanTest is DSTest {
     Human human;

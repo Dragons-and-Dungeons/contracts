@@ -17,7 +17,7 @@ contract CharacterTest is DSTest {
 
     function testParams() public {
         assertEq(character.name(), "Character");
-        assertEq(character.symbol(),"D&D");
+        assertEq(character.symbol(), "D&D");
     }
 
     function testCreate() public {
@@ -28,9 +28,15 @@ contract CharacterTest is DSTest {
             address(barbarian)
         );
 
-        assertEq(character.balanceOf(address(this)),1);
-        assertEq(character.ownerOf(0),address(this));
+        assertEq(character.balanceOf(address(this)), 1);
+        assertEq(character.ownerOf(0), address(this));
         assertEq(character.lastId(), 1);
+
+        character.create("Qma2FRWoD8AgvrFTVQyPgsrUvJxe2VFV5sdb7T4NCcAj9d", address(human), address(barbarian));
+
+        assertEq(character.balanceOf(address(this)), 2);
+        assertEq(character.ownerOf(1), address(this));
+        assertEq(character.lastId(), 2);
 
         // Checks values
         // Race should be it's own contract and add bonuses,
