@@ -41,11 +41,22 @@ contract CharacterTest is DSTest {
         assertEq(character.ownerOf(1), address(this));
         assertEq(character.lastId(), 2);
         assertEq(character.characterExp(1), 0);
+        uint8[8] memory stats = character.getStats(0);
+        assertEq(stats[0], 12);
+        assertEq(stats[1], 12);
+        assertEq(stats[2], 15);
+        assertEq(stats[3], 14);
+        assertEq(stats[4], 13);
+        assertEq(stats[5], 12);
+        assertEq(stats[6], 10);
+        assertEq(stats[7], 8);
 
+        //        assertEq(stats, [12, 12, 15, 14, 13, 12, 10, 8]);
         // Checks values
         // Race should be it's own contract and add bonuses,
         // Class should be a contract
     }
+
     //
     //    function testSetAbilities() public {
     //        character.setAbilities(1, 15, 14, 13, 12, 10, 8);
