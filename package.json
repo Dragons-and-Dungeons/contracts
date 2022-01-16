@@ -7,7 +7,9 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "test": "./test.sh"
+    "test": "./test.sh",
+    "dm": "./deploy/dungeonMaster.sh",
+    "vdm": "./deploy/verifyDM.sh"
   },
   "dependencies": {
     "prettier": "^2.5.1",
