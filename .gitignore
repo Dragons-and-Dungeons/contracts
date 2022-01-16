@@ -9,3 +9,4 @@ artifacts
 .secret
 package-lock.json
 yarn.lock
+mnemonic.txt
