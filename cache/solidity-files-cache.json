@@ -178,8 +178,8 @@
       ]
     },
     "/home/crisgarner/Projects/hackathons/DnD/src/Character.sol": {
-      "lastModificationDate": 1642285928325,
-      "contentHash": "5d8b212b86cf7b5ca3b96cde1bcf747c",
+      "lastModificationDate": 1642292910358,
+      "contentHash": "0268538caed5bca276212dcbaa364ed4",
       "sourceName": "src/Character.sol",
       "solcConfig": {
         "settings": {
@@ -285,8 +285,8 @@
       ]
     },
     "/home/crisgarner/Projects/hackathons/DnD/src/Monster.sol": {
-      "lastModificationDate": 1642290695499,
-      "contentHash": "5b07b4c1895ad395016dfbf22bf7d559",
+      "lastModificationDate": 1642296707510,
+      "contentHash": "00226c9d8be7be754aa386250185254c",
       "sourceName": "src/Monster.sol",
       "solcConfig": {
         "settings": {
@@ -312,12 +312,14 @@
       },
       "imports": [
         "solmate/tokens/ERC721.sol",
+        "./interfaces/IMonster.sol",
         "openzeppelin-contracts/contracts/access/Ownable.sol"
       ],
       "versionPragmas": [
         "0.8.10"
       ],
       "artifacts": [
+        "ICharacter",
         "Monster"
       ]
     },
@@ -572,8 +574,8 @@
       ]
     },
     "/home/crisgarner/Projects/hackathons/DnD/src/test/Character.t.sol": {
-      "lastModificationDate": 1642273226115,
-      "contentHash": "c461e16cdf79d816351d3cd3f3de027b",
+      "lastModificationDate": 1642292961654,
+      "contentHash": "50e74b62f6305d0ac5b5385349f63af4",
       "sourceName": "src/test/Character.t.sol",
       "solcConfig": {
         "settings": {
@@ -600,8 +602,8 @@
       "imports": [
         "ds-test/test.sol",
         "../Character.sol",
-        "../Human.sol",
-        "../Barbarian.sol"
+        "../races/Human.sol",
+        "../classes/Barbarian.sol"
       ],
       "versionPragmas": [
         "0.8.10"
@@ -648,8 +650,8 @@
       ]
     },
     "/home/crisgarner/Projects/hackathons/DnD/src/test/Monster.t.sol": {
-      "lastModificationDate": 1642290753251,
-      "contentHash": "8c2e34d2459c13ba26d96452a5bea452",
+      "lastModificationDate": 1642296719926,
+      "contentHash": "ae631a5b416e7096f7859655c6268012",
       "sourceName": "src/test/Monster.t.sol",
       "solcConfig": {
         "settings": {
@@ -676,7 +678,10 @@
       "imports": [
         "ds-test/test.sol",
         "../Monster.sol",
-        "../monsters/Troll.sol"
+        "../monsters/Troll.sol",
+        "../races/Human.sol",
+        "../classes/Barbarian.sol",
+        "../Character.sol"
       ],
       "versionPragmas": [
         "0.8.10"
